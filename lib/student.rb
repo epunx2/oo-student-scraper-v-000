@@ -8,11 +8,6 @@ class Student
     student = student_hash
     @name = student[:name]
     @location = student[:location]
-    @linkedin = student[:linkedin]
-    @github = student[:github]
-    @blog = student[:blog]
-    @profile_quote = student[:profile_quote]
-    @bio = student[:bio]
     @profile_url = student[:profile_url]
     @@all << self
   end
@@ -24,7 +19,12 @@ class Student
   end
 
   def add_student_attributes(attributes_hash)
-
+    stu_att = attributes_hash
+    @linkedin = stu_att[:linkedin]
+    @github = stu_att[:github]
+    @blog = stu_att[:blog]
+    @profile_quote = stu_att[:profile_quote]
+    @bio = stu_att[:bio]
   end
 
   def self.all
