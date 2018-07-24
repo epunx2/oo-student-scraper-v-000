@@ -20,6 +20,7 @@ class Student
 
   def add_student_attributes(attributes_hash)
     stu_att = attributes_hash
+    @twitter = stu_att[:twitter]
     @linkedin = stu_att[:linkedin]
     @github = stu_att[:github]
     @blog = stu_att[:blog]
